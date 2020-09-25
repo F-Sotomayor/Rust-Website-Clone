@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    filter: brightness(40%);
+  }
+  .nav-bar {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 10vh;
+    .logo {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      flex: 0.5;
+      .nav-logo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #bbb6b3;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        img {
+          height: auto;
+          width: 50%;
+        }
+      }
+    }
+    .bar {
+      display: flex;
+      height: 100%;
+      justify-content: space-evenly;
+      align-content: center;
+      flex: 1;
+      .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bbb6b3;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        flex: 1;
+
+        &:hover {
+          background-color: #cd412b;
+        }
+        .fas {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .content-container {
+    margin-top: 20vh;
+    display: flex;
+    height: 75vh;
+    .fake-content {
+      display: flex;
+      flex: 0.5;
+    }
+    .main-content {
+      display: flex;
+      flex: 0.5;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      .title {
+        color: #e9dcd5;
+        font-family: "Open Sans", sans-serif;
+        font-size: 92px;
+        font-weight: 1000;
+      }
+      .description {
+        color: #e9dcd5;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+      }
+      .view-on-steam {
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          background-color: #cd412b;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+          width: 300px;
+          height: 50px;
+          font-size: 18px;
+          .fab {
+            margin-right: 12px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

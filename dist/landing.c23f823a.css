@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+}
+.container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  object-fit: cover;
+  width: 100vw;
+  height: auto;
+  filter: brightness(40%);
+}
+.container .nav-bar {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 10vh;
+}
+.container .nav-bar .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex: 0.5;
+}
+.container .nav-bar .logo .nav-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #bbb6b3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container .nav-bar .logo .nav-logo img {
+  height: auto;
+  width: 50%;
+}
+.container .nav-bar .bar {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  flex: 1;
+}
+.container .nav-bar .bar .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbb6b3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  flex: 1;
+}
+.container .nav-bar .bar .nav-item:hover {
+  background-color: #cd412b;
+}
+.container .nav-bar .bar .nav-item .fas {
+  margin-left: 12px;
+}
+.container .content-container {
+  margin-top: 20vh;
+  display: flex;
+  height: 75vh;
+}
+.container .content-container .fake-content {
+  display: flex;
+  flex: 0.5;
+}
+.container .content-container .main-content {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .content-container .main-content .title {
+  color: #e9dcd5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 92px;
+  font-weight: 1000;
+}
+.container .content-container .main-content .description {
+  color: #e9dcd5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.container .content-container .main-content .view-on-steam button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #cd412b;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+}
+.container .content-container .main-content .view-on-steam button .fab {
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=/landing.c23f823a.css.map */
